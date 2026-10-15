@@ -1,0 +1,24 @@
+# Core
+numpy
+pandas
+
+# Dataset and imaging
+pydicom
+nibabel
+SimpleITK
+scipy
+scikit-image==0.26.0
+
+# Classical machine learning
+scikit-learn
+xgboost
+imbalanced-learn
+
+# Radiomics and preprocessing
+pyradiomics @ git+https://github.com/AIM-Harvard/pyradiomics.git@v3.1.0
+PyWavelets==1.9.0
+dipy==1.12.0
+
+# Deep learning
+torch==2.4.1
+torchvision==0.19.1

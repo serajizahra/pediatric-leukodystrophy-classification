@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-code-repo"
+version = "1.0.0"
+description = "Python code for pediatric leukodystrophy MRI classification"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "MIT" }
+authors = [
+  { name = "Zahra Saraji" },
+  { name = "Morteza Heidari" },
+  { name = "Saeid Rashidi" },
+  { name = "Mahmoudreza Ashrafi" }
+]
+dependencies = [
+  "numpy",
+  "pandas",
+]
+
+[project.optional-dependencies]
+preprocessing = [
+  "dipy==1.12.0",
+  "matplotlib==3.11.0",
+  "nibabel==5.4.2",
+  "nilearn==0.13.1",
+  "pydicom==3.0.2",
+  "scikit-image==0.26.0",
+  "scipy==1.15.3",
+  "SimpleITK==2.5.5",
+]
+handcrafted = [
+  "PyWavelets==1.9.0",
+  "scikit-image==0.26.0",
+  "pyradiomics @ git+https://github.com/AIM-Harvard/pyradiomics.git@v3.1.0",
+]
+traditional = [
+  "imbalanced-learn>=0.13",
+  "scikit-learn>=1.5",
+  "xgboost>=2.1",
+]
+deep = [
+  "torch==2.4.1",
+  "torchvision==0.19.1",
+]
+test = ["pytest==9.1.0"]
+
+[project.scripts]
+paper-code-repo = "paper_code_repo.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

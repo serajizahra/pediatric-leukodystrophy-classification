@@ -1,0 +1,43 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local tools and generated medical-image outputs
+.tools/
+outputs/
+artifacts/
+preprocessed/
+*.nii
+*.nii.gz
+*.mgz
+*.mgh
+*.dcm
+!data/sample_dicom/*.dcm
+*.dicom
+*.pt
+*.pth
+*.ckpt
