@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11,<3.12"
 license = { text = "MIT" }
 authors = [
-  { name = "Zahra Saraji" },
+  { name = "Zahra Seraji" },
   { name = "Morteza Heidari" },
   { name = "Saeid Rashidi" },
   { name = "Mahmoudreza Ashrafi" }

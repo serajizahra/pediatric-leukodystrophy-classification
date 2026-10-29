@@ -3,7 +3,7 @@ message: "If you use this software, cite the repository commit or tagged release
 title: "Pediatric Leukodystrophy MRI Classification"
 version: "1.0.0"
 authors:
-  - family-names: "Saraji"
+  - family-names: "Seraji"
     given-names: "Zahra"
     orcid: "https://orcid.org/0009-0005-6237-0212"
   - family-names: "Heidari"
